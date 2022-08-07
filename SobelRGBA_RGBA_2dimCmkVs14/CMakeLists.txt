@@ -48,10 +48,10 @@
 
 
 
-add_executable(parallelImageCLSobelRGBA_RGBA_2dimCmkVs14 ex9.cpp Device.cl)
-target_compile_features(parallelImageCLSobelRGBA_RGBA_2dimCmkVs14 PRIVATE cxx_auto_type)
+add_executable( SobelRGBA_RGBA_2dimCmkVs14 ex9.cpp Device.cl)
+target_compile_features(SobelRGBA_RGBA_2dimCmkVs14 PRIVATE cxx_auto_type)
 target_link_libraries(
-    parallelImageCLSobelRGBA_RGBA_2dimCmkVs14 PRIVATE
+    SobelRGBA_RGBA_2dimCmkVs14 PRIVATE
     ${CUDA_OpenCL_LIBRARY} ${OpenCV_LIBS} ${OPENCL_LIBRARIES}
     ${OpenCV_LIB_COMPONENTS}
     )

@@ -48,10 +48,10 @@
 
 
 
-add_executable(parallelImageEx9CompareCmkVs14OK ex9.cpp Device.cl)
-target_compile_features(parallelImageEx9CompareCmkVs14OK PRIVATE cxx_auto_type)
+add_executable(Ex9CompareCmkVs14OK ex9.cpp Device.cl)
+target_compile_features(Ex9CompareCmkVs14OK PRIVATE cxx_auto_type)
 target_link_libraries(
-    parallelImageEx9CompareCmkVs14OK PRIVATE
+  Ex9CompareCmkVs14OK PRIVATE
     ${CUDA_OpenCL_LIBRARY} ${OpenCV_LIBS} ${OPENCL_LIBRARIES}
     ${OpenCV_LIB_COMPONENTS}
     )

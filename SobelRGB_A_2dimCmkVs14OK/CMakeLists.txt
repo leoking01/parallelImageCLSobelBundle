@@ -48,10 +48,10 @@
 
 
 
-add_executable(parallelImageCLSobelRGB_A_2dimCmkVs14OK ex9.cpp Device.cl)
-target_compile_features(parallelImageCLSobelRGB_A_2dimCmkVs14OK PRIVATE cxx_auto_type)
+add_executable( SobelRGB_A_2dimCmkVs14OK ex9.cpp Device.cl)
+target_compile_features(SobelRGB_A_2dimCmkVs14OK PRIVATE cxx_auto_type)
 target_link_libraries(
-    parallelImageCLSobelRGB_A_2dimCmkVs14OK PRIVATE
+    SobelRGB_A_2dimCmkVs14OK PRIVATE
     ${CUDA_OpenCL_LIBRARY} ${OpenCV_LIBS} ${OPENCL_LIBRARIES}
     ${OpenCV_LIB_COMPONENTS}
     )

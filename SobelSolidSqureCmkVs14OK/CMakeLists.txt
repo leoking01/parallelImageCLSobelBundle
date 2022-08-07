@@ -48,10 +48,10 @@
 
 
 
-add_executable(parallelImageCLSobelSolidSqureCmkVs14OK ex9.cpp Device.cl)
-target_compile_features(parallelImageCLSobelSolidSqureCmkVs14OK PRIVATE cxx_auto_type)
+add_executable( SobelSolidSqureCmkVs14OK ex9.cpp Device.cl)
+target_compile_features(SobelSolidSqureCmkVs14OK PRIVATE cxx_auto_type)
 target_link_libraries(
-    parallelImageCLSobelSolidSqureCmkVs14OK PRIVATE
+    SobelSolidSqureCmkVs14OK PRIVATE
     ${CUDA_OpenCL_LIBRARY} ${OpenCV_LIBS} ${OPENCL_LIBRARIES}
     ${OpenCV_LIB_COMPONENTS}
     )
